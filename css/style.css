@@ -199,7 +199,7 @@ img {
   right: 0;
   z-index: 20;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.05); }
-  .header .wrapper {
+  .header .wrapper-fluid {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -342,13 +342,16 @@ img {
   min-height: 100vh;
   width: 100%; }
 
-.wrapper {
+.wrapper, .wrapper-fluid {
   width: 100%;
   min-width: 32rem;
   width: 104.9rem;
   padding: 0 5rem 0 5rem;
   margin: 0 auto;
   position: relative; }
+
+.wrapper-fluid {
+  width: auto; }
 
 .main {
   width: 100%;
@@ -1107,7 +1110,7 @@ label {
       top: 1rem;
       width: .7rem;
       height: .7rem; }
-  .wrapper {
+  .wrapper, .wrapper-fluid {
     padding-left: 2rem;
     padding-right: 2rem; }
   .promo {
@@ -1148,7 +1151,7 @@ label {
     font-size: 4rem; } }
 
 @media screen and (max-width: 559px) {
-  .wrapper {
+  .wrapper, .wrapper-fluid {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
   .header-nav li {
